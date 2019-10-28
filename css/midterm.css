@@ -1,0 +1,457 @@
+/* ********************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    text-align: justify;
+    align-content: center;
+}
+header {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+/* DEFAULTS */
+h4 , h5{
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: 30px;
+    background-color: #A0E9EE;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+p {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+}
+.title {
+    line-height: 10px;
+    align-content: center;
+    float: left;
+}
+a {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+}
+/* *********************** */
+/* LAYAOUT 1 / DESKTOP FIRST */
+img {
+    width: 100%;
+    background-size: cover;
+}
+
+h1 {
+    position: absolute;
+    background: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    top: 100px;
+    left: 80px;
+    padding: 10px;
+    font-size: 130px;
+}
+h2 {
+    position: absolute;
+    background: #FFFFFF;
+    color: #000000;
+    text-align: center;
+    top: 200px;
+    left: 80px;
+    padding: 10px;
+    font-size: 120px;
+    margin-top: 30px;
+   
+}
+h3 {
+    position: absolute;
+    background: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    top: 300px;
+    left: 80px;
+    padding: 10px;
+    font-size: 140px;
+    margin-top: 60px;
+}
+nav {
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+.menu li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 40px;
+    
+}
+.menu a {
+    font-size: 40px;
+    min-width: 200px;
+    padding: 10px 60px;
+    text-decoration: none;
+    border-radius: 10px;
+    opacity: 0px;
+    color: #000000;
+}
+.menu a:hover {
+	background: rgba(0,0,0,0);
+	color: #A0E9EE;
+	box-shadow: inset 0 0 0 3px #A0E9EE;
+}
+
+main {
+    width: 100%;
+    align-content: center;
+    padding: 0 50px;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.column-one {
+    margin: 20px;
+    width: 50%;
+
+}
+.column-one p {
+    margin-top: 20px;
+}
+
+.column-one figure {
+    width: 55%;
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+
+.column-two {
+    width: 50%;
+    float: right;
+    margin: 20px;
+    width: 50%;
+    align-content: center;
+}
+
+footer {
+    display: flex;
+    flex: row;
+    background-color: #000000;
+    align-items: center;
+
+}
+footer p {
+    font-size: 15px;
+    padding: 0 100px;
+    background-color: #000000;
+    color:#FFFFFF;
+}
+.footer a{
+    justify-content: space-between;
+    background-color: #000000;
+    color: #FFFFFF;
+
+}
+.footer {
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    background-color: #000000;
+    align-items: center;
+}
+.footer li {
+    list-style: none;
+    text-align: center;
+    background-color: #000000;
+}
+/* ******************** */
+/* LAYOUT 2 / LARGE */
+
+
+@media screen and (min-width: 800px) and (max-width: 1200px){ 
+    header {
+        width: 100%;
+    }
+    .title {
+      float: none;
+      resize: both;
+      overflow: auto;
+    }
+    h1 { 
+        font-size: 120px;
+        margin: 0px;
+        top: 80px;
+    }
+    h2 {
+        font-size: 50px;
+        left: 200px;
+        padding: 0%;
+        margin: 0%;
+        top: 180px;
+    }
+    h3 {
+        top: 200px;
+        font-size: 120px;
+        left: 30px;
+    }
+
+    nav {
+        align-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 20px 45px 0px;
+       
+    }
+    .menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0px;
+        background-color: #000000;
+        padding: 0px 0px;
+        border-radius: 10px;
+
+    }
+    .menu li {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .menu a {
+        color: #F0F8FF;
+        background-color: #000000;
+        text-align: center;
+        text-decoration: none;
+        padding: 0px;
+        border-radius: 0%;
+    }
+    
+    .menu a:hover{
+        box-shadow: none;
+    }
+
+    main {
+        width: 90%;
+        margin: 0px 45px;
+        border: 3px double #00ffff;
+        border-bottom: 5px;
+    }
+    .column-one, .column-two {
+        width: 50%;
+    }
+
+    .column-one figure {
+        width: 50%;
+    }
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px){
+    .wrapper {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    .title {
+        float: none;
+        resize: both;
+        line-height: 0%;
+      }
+    h1 { 
+        font-size: 100px;
+        margin: 0px;
+        top: 80px;
+        text-shadow: 5px 5px #23353d;
+        padding: 0%;
+    }
+    h2 {
+        font-size: 50px;
+        left: 150px;
+        padding: 0%;
+        margin: 0%;
+        top: 180px;
+        text-shadow: 1px 1px #FFFFFF;
+    }
+    h3 {
+        top: 200px;
+        font-size: 100px;
+        left: 30px;
+        padding: 0%;
+        text-shadow: 5px 5px #23353d;
+    }
+    nav {
+        width: 90%;
+        margin: 0px 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 20px 0px 0px 0px;
+        background-color: #000000;
+        padding: 0px 0px;
+        border-radius: 10px;
+
+    }
+    .menu li {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .menu a {
+        color: #F0F8FF;
+        background-color: #000000;
+        text-align: center;
+        text-decoration: none;
+        padding: 0px;
+        border-radius: 0%;
+    }
+      
+    .menu a:hover {
+        background-color: #000000;
+        box-shadow: none;
+        text-shadow: 0px -2px 0px #000000, 0 0 5px #ceced1,0 -4px 15px #ceced1;
+    }
+    main {
+        width: 100%;
+    }
+    .column-one img {
+        width: 100%;
+    }
+    .footer {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .wrapper {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    .title {
+        float: none;
+        line-height: 0%;
+        
+      }
+      h1 { 
+        font-size: 50px;
+        margin: 0px;
+        top: 60px;
+        padding: 0%;
+        left: 30px;
+    }
+    h2 {
+        font-size: 50px;
+        left: 30px;
+        padding: 0%;
+        margin: 0%;
+        top: 100px;
+    }
+    h3 {
+        top: 80px;
+        font-size: 50px;
+        left: 30px;
+        padding: 0%;
+    }
+    
+    nav {
+        width: 90%;
+        margin: 0px 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu {
+        margin: 20px
+    }
+    .menu li {
+        
+        margin: 0%;
+        text-align: center;
+        margin: 5px 0 5px;
+        text-transform: uppercase;
+    }
+
+    .menu a {
+        background-color: #eee;
+        color: black;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        border-radius: 0%;
+        text-align: center;
+        font-size: 20px;
+        border: 1px solid #000000;
+      }
+      
+      .menu a:hover {
+        background-color: #1c1d1c;
+      }
+      main {
+          width: 100%;
+          padding: 0%;
+      }
+    .content {
+        width: 100%;
+        padding: 10px;
+        display: block;
+    }
+    .content h4, h5 {
+        font-size: 25px;
+    }
+    .column-one {
+        width: 100%;
+        padding: 0px 30px;
+        margin: 0%;
+    }
+    .column-two {
+        width: 100%;
+        padding-left: 50px;
+    }
+    .column-one figure {
+        width: 100%;
+        background-size: cover;
+        text-align: center;
+    }
+    footer {
+        width: 100%;
+    }
+    .footer{
+        display: block;
+        justify-content: space-between;
+        padding-bottom: 5px;
+    }
+    footer p {
+        padding: 5%;
+    }
+    .footer li {
+        align-items: center;
+        list-style-type: none;
+    }
+
+}
+
+
